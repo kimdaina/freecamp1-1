@@ -1,17 +1,32 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import MyInfo from "./components/MyInfo";
+import App from "./components/App";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App/>,document.getElementById("root"))
+
+// 3.
+// ReactDOM.render(<MyInfo/>,document.getElementById("root"))
+
+// 2.
+// function MyApp(){
+//     return(
+//         <ul>
+//             <li>1</li>
+//             <li>2</li>
+//             <li>3</li>
+//         </ul>
+//     );
+// }
+//
+// ReactDOM.render(
+//     <MyApp/>,
+//     document.getElementById("root"))
+
+
+//1.
+// ReactDOM.render(<div><h1>Hello</h1><p>It's my pratice</p></div>,document.getElementById("root"))
+// var myNewp=document.createElement("p")
+// myNewp.innerHTML = "This is my paragraph"
